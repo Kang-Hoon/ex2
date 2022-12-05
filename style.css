@@ -1,0 +1,31 @@
+.section {
+    background : rgb(134, 240, 227);
+}
+
+#top-section {
+    margin-top : 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 1px solid black;
+}
+
+#page-title {
+    text-align: center;
+    color : tomato;
+}
+
+div#search-section.section {
+    
+    display: inline-block;
+    margin : auto;
+}
+
+#search-section.section {
+    text-align: center;
+}
+
+#test-input {
+    text-align: center;
+}
