@@ -1,0 +1,35 @@
+.page-header{
+    padding: 1em;
+    background-color: lightgray;
+}
+.content-container {
+    font-size: 0;
+}
+.content-section {
+    padding: 1em;
+    display: inline-block;
+    font-size: 1rem;
+}
+.content-section-a{
+    padding: 1em;
+    background-color: yellow;
+    width: calc(30% - 2em);
+}
+.content-section-b{
+    padding: 1em;
+    background-color: pink;
+    width: calc(70% - 2em);
+}
+.page-footer {
+    padding: 1em;
+    background-color: olive;
+}
+
+.global-menu-link {
+    display: inline;
+    margin: 5px;
+    background-color: white;
+}
+
+/* block or inline */
+
