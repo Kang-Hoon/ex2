@@ -1,0 +1,58 @@
+
+.sejong-map-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sejong-map-container {
+    margin: 2rem 0;
+}
+
+.sejong-map {
+    position: relative;
+    width: 320px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.sejong-map-item {
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.sejong-map-check {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    opacity: 0;
+}
+
+.sejong-map-check:checked ~ .sejong-map-item-title {
+    font-weight: bold;
+}
+
+.sejong-map-item .mapshape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/my-sejong-sprite-white.png');
+    background-repeat: no-repeat;
+    /* background-size: 428px 934px; */
+}
+
+/* 고운동 */
+.sprite {
+	background: url('imgs/my-sejong-sprite-white.png') no-repeat 0.862% 0.962%;
+	background-size: 420px 594px;
+	width: 130px;
+	height: 230px;
+}
+/* 아름동 */
+.sprite {
+	background: url('imgs/my-sejong-sprite-white.png') no-repeat 45.497% 6.151%;
+	background-size: 420px 594px;
+	width: 98px;
+	height: 123px;
+}
