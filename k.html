@@ -3,20 +3,123 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style1.css">
+	<title>너 사는 곳은?</title>
+	<link rel="stylesheet" href="styles.css">
+
+	<style type="text/css">
+
+	#kl1-map {
+		position: relative;
+		width: 450px;
+		height: auto;
+		align-self: center;
+
+
+	}
+
+	.welcome-box {
+		position: absolute;
+		border: 2px solid gray;
+		width: 400px;
+		height: 240px;
+		border: solid black;
+		background-color: gray;
+		align-self: center;
+		top: 12%;
+		right: 10%;
+		text-align: center;
+
+	}
+
+	.result-box {
+		position: absolute;
+		border: 2px solid gray;
+		width: 400px;
+		height: 240px;
+		border: solid black;
+		background-color: gray;
+		align-self: center;
+		top: 52%;
+		right: 10%;
+		text-align: center;
+
+	}
+
+	</style>
+
 </head>
+
 <body>
+	<script>
+	function cb(response) {
+	    document.getElementById('visits').innerText = response.value;
+	}
+	</script>
+	<script async src="https://api.countapi.xyz/hit/mysite.com/visits?callback=cb"></script>
+
 	<img id="kl1-map" src="https://i.imgur.com/DZib3kn.png" alt="kleague-map">
 
 	<div class="welcome-box">
-		
+        <div class="col-2"><h5><strong>주소 <span style="color:red;">*</span></strong></h5></div>
+		<div class="col-auto">
+		<input type="hidden" name="place">
+		<input type="text" size="40" name="address" id="address" class="essential">
+		<input type="hidden" name="lat">
+		<input type="hidden" name="lng">
+		<a type="button" id="reset" class="btn btn-outline-dark">초기화</a>
 	</div>
 
+	<script type="text/javascript">
+		var geocoder = new kakao.maps.services.Geocoder();
+
+		$("#address").click(function(){
+		    new daum.Postcode({
+		        oncomplete: function(data) {
+		            $("#address").val(data.address);
+		            $("#address").prop("readonly",true);
+		            $("input[name=place]").val(data.sido);
+		            var juso =  $("#address").val();
+		        	geocoder.addressSearch(juso, callback);  
+		        }
+		    }).open()
+		});
+
+		var callback = function(result, status) {
+			if (status === kakao.maps.services.Status.OK) {
+				$("input[name=lng]").val(result[0].x);
+				$("input[name=lat]").val(result[0].y);
+			}
+		};
+	</script>
+
+	</div>
+	<div class="result-box">
+        <h1>너 사는 곳은?</h1>
+        <div class="where">
+        	<input type="text" class="button">
+			<input type="submit">
+        </div>
+
+	</div>
 
 
 </body>
 <footer>
+	<hr><hr>
+	<div>
+	Speacial Thanks To :
+	<ul>
+		
+	</ul>
+	</div>
+	<div class="api-references">
+	API References :
+		<ul>
+			<li></li>
+			<li>https://jinibh.tistory.com/entry/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%A7%80%EB%8F%84-%EC%9C%84%EB%8F%84-%EA%B2%BD%EB%8F%84-%EC%B0%BE%EA%B8%B0</li>
+			<li>https://countapi.xyz/</li>
+		</ul>
+	</div>
 	
 </footer>
 </html>
