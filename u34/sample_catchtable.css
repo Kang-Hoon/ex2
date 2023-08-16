@@ -1,0 +1,107 @@
+
+element.style {
+}
+#dock .dock-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 480px;
+    background: #fff;
+    border-top: 1px solid #f9f9f9;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -.05em;
+}
+* {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+* {
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;
+    font-style: normal;
+}
+사용자 에이전트 스타일시트
+div {
+    display: block;
+}
+.disable-user-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+body {
+    --_1p0xsgp0: #FFECE5;
+    --_1p0xsgp1: #FF6632;
+    --_1p0xsgp2: #FF3D00;
+    --_1p0xsgp3: #FFFFFF;
+    --_1p0xsgp4: #F9F9F9;
+    --_1p0xsgp5: #F4F4F4;
+    --_1p0xsgp6: #E5E5E5;
+    --_1p0xsgp7: #D5D5D5;
+    --_1p0xsgp8: #AAAAAA;
+    --_1p0xsgp9: #666666;
+    --_1p0xsgpa: #222222;
+    --_1p0xsgpb: rgba(0, 0, 0, .8);
+    --_1p0xsgpc: rgba(0, 0, 0, .6);
+    --_1p0xsgpd: rgba(255, 92, 70, .3);
+    --_1p0xsgpe: rgba(188, 188, 188, .3);
+    --_1p0xsgpf: rgba(0, 0, 0, .3);
+    --_1p0xsgpg: #DC1C1C;
+    --_1p0xsgph: #23B169;
+    --_1p0xsgpi: #0091FF;
+    --_1p0xsgpj: #FFB84D;
+    --_1p0xsgpk: #801212;
+    --_1p0xsgpl: #1B592E;
+    --_1p0xsgpm: #103282;
+    --_1p0xsgpn: #855B1F;
+    --_1p0xsgpo: #FEEDED;
+    --_1p0xsgpp: #E9F8F0;
+    --_1p0xsgpq: #E8F2F9;
+    --_1p0xsgpr: #FFF8EE;
+    --_1p0xsgps: 10px;
+    --_1p0xsgpt: 12px;
+    --_1p0xsgpu: 14px;
+    --_1p0xsgpv: 16px;
+    --_1p0xsgpw: 18px;
+    --_1p0xsgpx: 20px;
+    --_1p0xsgpy: 24px;
+    --_1p0xsgpz: 400;
+    --_1p0xsgp10: 500;
+    --_1p0xsgp11: 700;
+    --_1p0xsgp12: 4px;
+    --_1p0xsgp13: 8px;
+    --_1p0xsgp14: 12px;
+    --_1p0xsgp15: 16px;
+}
+body {
+    line-height: 1;
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+html {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none;
+}
+html {
+    font-size: 14px;
+    color: #000;
+    word-break: keep-all;
+}
