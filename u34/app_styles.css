@@ -1,13 +1,13 @@
 /* Add a black background color to the top navigation
 Nav바 의 기본색상을 정해준다 */
-.topnav {
+#header .topnav {
   background-color: #333; /* 아주 진한 회색 */
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar 
 Nav바 안쪽의 스타일을 설정한다 */
-.topnav a {
+#header .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -18,17 +18,57 @@ Nav바 안쪽의 스타일을 설정한다 */
 
 /* Change the color of links on hover 
 마우스를 가까이 가져갔을때, 색을 바꾼다 */
-.topnav a:hover {
+#header .topnav a:hover {
   background-color: #ccc;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+#header .topnav a.active {
   background-color: #04AA6D;
 /*  background-color: #0000FF;*/
   color: white;
 }
+
+#header .container {
+    margin: 0 auto;
+    max-width: 480px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 48px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#header .header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#header .brand {
+    overflow: hidden;
+
+    width: 30px;
+    height: 60px;
+    padding: 1px 0 0 1px;
+    margin: 3px 3px 3px 3px;
+
+}
+
+
+#main .u-subleague a {
+    border: 1px solid black;
+}
+
+
+
+
+
 
 
 #dock {
